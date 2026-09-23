@@ -1,0 +1,157 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Amirah's Cast</title> 
+
+<style> 
+body { 
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+background: linear-gradient(180deg, #6a1b9a, #4a148c); 
+color: #fff; 
+display: flex; 
+justify-content: center; 
+align-items: center; 
+height: 100vh; 
+margin: 0; 
+text-align: center; 
+overflow: hidden; 
+position: relative; 
+} 
+
+.instagram-link {
+position: absolute;
+top: 20px;
+left: 20px;
+color: #fff;
+text-decoration: none;
+font-size: 20px;
+font-weight: bold;
+font-family: cursive;
+z-index: 20;
+}
+
+.instagram-link:hover {
+text-decoration: underline;
+color: #ffd700;
+}
+
+.weather-card { 
+background: rgba(230, 210, 255, 0.2); 
+padding: 30px; 
+border-radius: 20px; 
+box-shadow: 0 8px 32px 0 rgba(40, 0, 80, 0.3); 
+backdrop-filter: blur(10px); 
+border: 1px solid rgba(255, 255, 255, 0.25); 
+width: 320px; 
+z-index: 10; 
+} 
+
+input { 
+padding: 12px; 
+border: none; 
+border-radius: 20px; 
+width: 80%; 
+margin-bottom: 20px; 
+text-align: center; 
+font-size: 16px; 
+outline: none; 
+color: #4a148c; 
+font-weight: bold; 
+} 
+
+button { 
+padding: 10px 25px; 
+background-color: #e0aa3e; 
+color: #4a148c; 
+border: none; 
+border-radius: 20px; 
+font-weight: bold; 
+cursor: pointer; 
+font-size: 16px; 
+transition: 0.2s; 
+} 
+
+button:hover { 
+background-color: #ffd700; 
+transform: scale(1.05); 
+} 
+
+.weather-info { 
+margin-top: 25px; 
+display: none; 
+} 
+
+.sun-icon { 
+font-size: 64px; 
+animation: spin 20s linear infinite, breeze 3s ease-in-out infinite alternate; 
+display: inline-block; 
+} 
+
+@keyframes spin { 
+100% { 
+transform: rotate(360deg); 
+} 
+} 
+
+@keyframes breeze { 
+0% { 
+transform: translateX(-10px) rotate(0deg); 
+} 
+
+100% { 
+transform: translateX(10px) rotate(15deg); 
+} 
+} 
+
+.falling-item { 
+position: absolute; 
+top: -100px; 
+font-size: 40px; 
+z-index: 1; 
+pointer-events: none; 
+animation: fall linear forwards; 
+} 
+
+@keyframes fall { 
+to { 
+transform: translateY(120vh) rotate(360deg); 
+} 
+} 
+</style> 
+</head> 
+
+<body> 
+
+<a class="instagram-link" href="https://www.instagram.com/d1menhater" target="_blank">
+@d1menhater
+</a>
+
+<div class="weather-card"> 
+<h2>Amirah's Cast ☀️</h2> 
+
+<input type="text" id="cityInput" placeholder="Enter your city..."> 
+
+<button onclick="getWeather()">Check Forecast</button> 
+
+<div class="weather-info" id="weatherInfo"> 
+<div class="sun-icon">☀️</div> 
+
+<h3 id="cityName">City</h3> 
+
+<h1 id="tempDisplay">69°F</h1> 
+
+<p>🍃 <strong>Condition:</strong> Slight Breeze</p> 
+
+<p>🚨 <strong>Precipitation:</strong> Heavy chance of men raining with money</p> 
+</div> 
+</div> 
+
+<script> 
+
+function getWeather() { 
+
+const city = document.getElementById('city
+```
